@@ -13,7 +13,7 @@ class City extends Component {
     if (this.props.city == this.props.selectedCity) {
       classes += " selected"
     }
-    return(<div className= {classes} onClick= {this.handleClick}>{this.props.city.name}</div>);
+    return(<div className= {classes} onClick= {this.handleClick} style= {{ cursor: "pointer" }}>{this.props.city.name}</div>);
   }
 }
 
